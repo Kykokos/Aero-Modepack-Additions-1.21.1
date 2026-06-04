@@ -35,6 +35,8 @@ public class AeroModepackAdditions {
 
         ModItems.register(modEventBus);
 
+        ModDataComponents.DATA_COMPONENT_TYPES.register(modEventBus);
+
         modEventBus.addListener(this::addCreative);
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
