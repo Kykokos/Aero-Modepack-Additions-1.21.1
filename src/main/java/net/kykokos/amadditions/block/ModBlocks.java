@@ -17,8 +17,8 @@ public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS =
             DeferredRegister.createBlocks(AeroModepackAdditions.MODID);
 
-    /*public static final DeferredBlock<Block> IDK_BLOCK = registerBlock("idk_block",
-            () -> new Block(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.ANCIENT_DEBRIS)));*/
+    public static final DeferredBlock<Block> SULFUR_BLOCK = registerBlock("sulfur_block",
+            () -> new Block(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(SoundType.TUFF)));
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

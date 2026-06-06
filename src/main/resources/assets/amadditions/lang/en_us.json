@@ -2,5 +2,7 @@
     "item.amadditions.electror": "Electror",
     "item.amadditions.electror_powder": "Electror Powder",
 
+    "block.amadditions.sulfur_block": "Sulfur Block",
+
     "component.amadditions.with_electrolytes": " with Electrolytes"
 }

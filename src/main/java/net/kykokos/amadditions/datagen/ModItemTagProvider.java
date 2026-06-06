@@ -1,6 +1,7 @@
 package net.kykokos.amadditions.datagen;
 
 import net.kykokos.amadditions.AeroModepackAdditions;
+import net.kykokos.amadditions.block.ModBlocks;
 import net.kykokos.amadditions.item.ModItems;
 import net.kykokos.amadditions.util.ModTags;
 import net.minecraft.core.HolderLookup;
@@ -19,8 +20,8 @@ public class ModItemTagProvider extends ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
-        /*tag(ModTags.Items.SUPERDUPERIDK_ITEMS)
-                .add(ModItems.ELECTROR.get())
-                .add(ModItems.ELECTROR_POWDER.get());*/
+        tag(ModTags.Items.SULFUR_BLOCK_ITEM)
+                .add(ModBlocks.SULFUR_BLOCK.asItem());
+
     }
 }

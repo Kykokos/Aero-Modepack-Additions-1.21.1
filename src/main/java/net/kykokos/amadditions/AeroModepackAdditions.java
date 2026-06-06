@@ -51,6 +51,10 @@ public class AeroModepackAdditions {
             event.accept(ModItems.ELECTROR);
             event.accept(ModItems.ELECTROR_POWDER);
         }
+
+        if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+            event.accept(ModBlocks.SULFUR_BLOCK);
+        }
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
