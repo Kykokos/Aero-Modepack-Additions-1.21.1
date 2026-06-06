@@ -1,4 +1,6 @@
 {
     "item.amadditions.electror": "Elektror",
-    "item.amadditions.electror_powder": "Prášek z Elektroru"
+    "item.amadditions.electror_powder": "Prášek z Elektroru",
+
+    "component.amadditions.with_electrolytes": " s Elektrolyty"
 }

@@ -1,4 +1,6 @@
 {
     "item.amadditions.electror": "Electror",
-    "item.amadditions.electror_powder": "Electror Powder"
+    "item.amadditions.electror_powder": "Electror Powder",
+
+    "component.amadditions.with_electrolytes": " with Electrolytes"
 }

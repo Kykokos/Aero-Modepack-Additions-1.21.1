@@ -28,7 +28,7 @@ public class ModEvents {
 
                 Component originalName = tooltip.get(0);
 
-                MutableComponent newName = originalName.copy().append(Component.literal(" with Electrolytes").withStyle(ChatFormatting.AQUA));
+                MutableComponent newName = originalName.copy().append(Component.translatable("component.amadditions.with_electrolytes").withStyle(ChatFormatting.AQUA));
 
                 tooltip.set(0, newName);
             }
