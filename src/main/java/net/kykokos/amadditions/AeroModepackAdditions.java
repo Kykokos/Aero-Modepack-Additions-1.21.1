@@ -1,6 +1,8 @@
 package net.kykokos.amadditions;
 
+import net.kykokos.amadditions.block.ModBlocks;
 import net.kykokos.amadditions.item.ModItems;
+import net.kykokos.amadditions.util.ModDataComponents;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
 
@@ -34,6 +36,7 @@ public class AeroModepackAdditions {
         NeoForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         ModDataComponents.DATA_COMPONENT_TYPES.register(modEventBus);
 

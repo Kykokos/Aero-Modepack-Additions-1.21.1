@@ -1,4 +1,4 @@
-package net.kykokos.amadditions;
+package net.kykokos.amadditions.util;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;

@@ -1,4 +1,4 @@
-package net.kykokos.amadditions;
+package net.kykokos.amadditions.util;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
