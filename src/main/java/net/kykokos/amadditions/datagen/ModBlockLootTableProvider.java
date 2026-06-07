@@ -25,8 +25,20 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
+
+        add(ModBlocks.POLISHED_SULFUR_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.POLISHED_SULFUR_SLAB.get()));
+        add(ModBlocks.SULFUR_BRICK_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.SULFUR_BRICK_SLAB.get()));
+
         dropSelf(ModBlocks.SULFUR_BLOCK.get());
         dropSelf(ModBlocks.SULFUR_SPIKE.get());
+        dropSelf(ModBlocks.POLISHED_SULFUR.get());
+        dropSelf(ModBlocks.SULFUR_BRICKS.get());
+        dropSelf(ModBlocks.POLISHED_SULFUR_STAIRS.get());
+        dropSelf(ModBlocks.POLISHED_SULFUR_WALL.get());
+        dropSelf(ModBlocks.SULFUR_BRICK_STAIRS.get());
+        dropSelf(ModBlocks.SULFUR_BRICK_WALL.get());
 
 
         /*add(ModBlocks.IDK_BLOCK.get(),

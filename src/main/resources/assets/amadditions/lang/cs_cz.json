@@ -6,6 +6,14 @@
 
     "block.amadditions.sulfur_block": "Blok Síry",
     "block.amadditions.sulfur_spike": "Krápník ze Síry",
+    "block.amadditions.polished_sulfur": "Vyhlazený Blok Síry",
+    "block.amadditions.sulfur_bricks": "Cihly ze síry",
+    "block.amadditions.polished_sulfur_slab": "Vyhlazený Slab ze Síry",
+    "block.amadditions.polished_sulfur_stairs": "Vyhlazené Schody ze Síry",
+    "block.amadditions.polished_sulfur_wall": "Vyhlazená Zeď ze Síry",
+    "block.amadditions.sulfur_brick_slab": "Cihelný Slab ze Síry",
+    "block.amadditions.sulfur_brick_stairs": "Cihelné Schody ze Síry",
+    "block.amadditions.sulfur_brick_wall": "Cihelná Zeď ze Síry",
 
     "tooltip.amadditions.sulfur_spike": "§7Roste pouze, pokud visí na Bloku Síry",
 

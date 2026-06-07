@@ -1,5 +1,13 @@
 {
   "values": [
-    "amadditions:sulfur_block"
+    "amadditions:sulfur_block",
+    "amadditions:polished_sulfur",
+    "amadditions:polished_sulfur_slab",
+    "amadditions:polished_sulfur_stairs",
+    "amadditions:polished_sulfur_wall",
+    "amadditions:sulfur_bricks",
+    "amadditions:sulfur_brick_slab",
+    "amadditions:sulfur_brick_stairs",
+    "amadditions:sulfur_brick_wall"
   ]
 }

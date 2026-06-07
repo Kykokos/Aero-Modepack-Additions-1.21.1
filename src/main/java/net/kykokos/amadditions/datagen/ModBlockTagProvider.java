@@ -20,10 +20,27 @@ public class ModBlockTagProvider extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         tag(BlockTags.NEEDS_STONE_TOOL)
-                .add(ModBlocks.SULFUR_BLOCK.get());
+                .add(ModBlocks.SULFUR_BLOCK.get())
+                .add(ModBlocks.POLISHED_SULFUR.get())
+                .add(ModBlocks.POLISHED_SULFUR_SLAB.get())
+                .add(ModBlocks.POLISHED_SULFUR_STAIRS.get())
+                .add(ModBlocks.POLISHED_SULFUR_WALL.get())
+                .add(ModBlocks.SULFUR_BRICKS.get())
+                .add(ModBlocks.SULFUR_BRICK_SLAB.get())
+                .add(ModBlocks.SULFUR_BRICK_STAIRS.get())
+                .add(ModBlocks.SULFUR_BRICK_WALL.get());
 
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(ModBlocks.SULFUR_BLOCK.get());
+                .add(ModBlocks.SULFUR_BLOCK.get())
+                .add(ModBlocks.POLISHED_SULFUR.get())
+                .add(ModBlocks.POLISHED_SULFUR_SLAB.get())
+                .add(ModBlocks.POLISHED_SULFUR_STAIRS.get())
+                .add(ModBlocks.POLISHED_SULFUR_WALL.get())
+                .add(ModBlocks.SULFUR_BRICKS.get())
+                .add(ModBlocks.SULFUR_BRICK_SLAB.get())
+                .add(ModBlocks.SULFUR_BRICK_STAIRS.get())
+                .add(ModBlocks.SULFUR_BRICK_WALL.get());
+
 
         tag(ModTags.Blocks.SULFUR_BLOCK)
                 .add(ModBlocks.SULFUR_BLOCK.get());

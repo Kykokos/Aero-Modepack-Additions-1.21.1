@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "amadditions:block/polished_sulfur_slab"
+    },
+    "type=double": {
+      "model": "amadditions:block/polished_sulfur"
+    },
+    "type=top": {
+      "model": "amadditions:block/polished_sulfur_slab_top"
+    }
+  }
+}

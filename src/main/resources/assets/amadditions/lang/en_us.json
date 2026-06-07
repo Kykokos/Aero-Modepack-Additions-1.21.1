@@ -6,6 +6,14 @@
 
     "block.amadditions.sulfur_block": "Sulfur Block",
     "block.amadditions.sulfur_spike": "Sulfur Spike",
+    "block.amadditions.polished_sulfur": "Polished Sulfur",
+    "block.amadditions.sulfur_bricks": "Sulfur Bricks",
+    "block.amadditions.polished_sulfur_slab": "Polished Sulfur Slab",
+    "block.amadditions.polished_sulfur_stairs": "Polished Sulfur Stairs",
+    "block.amadditions.polished_sulfur_wall": "Polished Sulfur Wall",
+    "block.amadditions.sulfur_brick_slab": "Sulfur Bricks Slab",
+    "block.amadditions.sulfur_brick_stairs": "Sulfur Bricks Stairs",
+    "block.amadditions.sulfur_brick_wall": "Sulfur Bricks Wall",
 
     "tooltip.amadditions.sulfur_spike": "§7Only grows when placed under a Sulfur Block",
 

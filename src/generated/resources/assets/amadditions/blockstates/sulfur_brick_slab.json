@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "amadditions:block/sulfur_brick_slab"
+    },
+    "type=double": {
+      "model": "amadditions:block/sulfur_bricks"
+    },
+    "type=top": {
+      "model": "amadditions:block/sulfur_brick_slab_top"
+    }
+  }
+}

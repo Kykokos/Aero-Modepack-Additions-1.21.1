@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "polished_sulfur",
+  "key": {
+    "#": {
+      "item": "amadditions:polished_sulfur"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "amadditions:polished_sulfur_stairs"
+  }
+}

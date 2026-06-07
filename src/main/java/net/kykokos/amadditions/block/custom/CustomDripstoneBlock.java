@@ -1,5 +1,6 @@
-package net.kykokos.amadditions.block;
+package net.kykokos.amadditions.block.custom;
 
+import net.kykokos.amadditions.block.ModBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;

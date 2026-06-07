@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "amadditions:sulfur_block"
+  },
+  "result": {
+    "count": 1,
+    "id": "amadditions:sulfur_brick_wall"
+  }
+}

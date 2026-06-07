@@ -58,6 +58,18 @@ public class AeroModepackAdditions {
             event.accept(ModBlocks.SULFUR_BLOCK);
             event.accept(ModItems.SULFUR_SPIKE);
         }
+
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.SULFUR_BLOCK);
+            event.accept(ModBlocks.POLISHED_SULFUR);
+            event.accept(ModBlocks.POLISHED_SULFUR_SLAB);
+            event.accept(ModBlocks.POLISHED_SULFUR_STAIRS);
+            event.accept(ModBlocks.POLISHED_SULFUR_WALL);
+            event.accept(ModBlocks.SULFUR_BRICKS);
+            event.accept(ModBlocks.SULFUR_BRICK_SLAB);
+            event.accept(ModBlocks.SULFUR_BRICK_STAIRS);
+            event.accept(ModBlocks.SULFUR_BRICK_WALL);
+        }
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {

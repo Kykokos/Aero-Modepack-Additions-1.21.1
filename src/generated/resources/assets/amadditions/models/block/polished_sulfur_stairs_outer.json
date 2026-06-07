@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "amadditions:block/polished_sulfur",
+    "side": "amadditions:block/polished_sulfur",
+    "top": "amadditions:block/polished_sulfur"
+  }
+}
