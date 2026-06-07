@@ -17,7 +17,7 @@ public class ModDataMapProvider extends DataMapProvider {
 
     @Override
     protected void gather(HolderLookup.Provider lookupProvider) {
-        /*this.builder(NeoForgeDataMaps.FURNACE_FUELS)
-                .add(ModItems.IDK_FUEL.getId(), new FurnaceFuel(1200), false);*/
+        this.builder(NeoForgeDataMaps.FURNACE_FUELS)
+                .add(ModItems.SULFUR_CHUNK.getId(), new FurnaceFuel(1200), false);
     }
 }

@@ -1,5 +1,8 @@
 package net.kykokos.amadditions;
 
+import net.kykokos.amadditions.block.ModBlocks;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
@@ -23,6 +26,6 @@ public class AeroModepackAdditionsClient {
 
     @SubscribeEvent
     static void onClientSetup(FMLClientSetupEvent event) {
-
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.SULFUR_SPIKE.get(), RenderType.cutout());
     }
 }

@@ -15,5 +15,7 @@ public class ModItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         basicItem(ModItems.ELECTROR.get());
         basicItem(ModItems.ELECTROR_POWDER.get());
+        basicItem(ModItems.SULFUR_CHUNK.get());
+        basicItem(ModItems.SULFUR_DUST.get());
     }
 }

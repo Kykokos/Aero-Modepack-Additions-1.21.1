@@ -50,10 +50,13 @@ public class AeroModepackAdditions {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.ELECTROR);
             event.accept(ModItems.ELECTROR_POWDER);
+            event.accept(ModItems.SULFUR_CHUNK);
+            event.accept(ModItems.SULFUR_DUST);
         }
 
         if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept(ModBlocks.SULFUR_BLOCK);
+            event.accept(ModItems.SULFUR_SPIKE);
         }
     }
 

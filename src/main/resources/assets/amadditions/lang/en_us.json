@@ -1,8 +1,13 @@
 {
     "item.amadditions.electror": "Electror",
     "item.amadditions.electror_powder": "Electror Powder",
+    "item.amadditions.sulfur_chunk": "Sulfur Chunk",
+    "item.amadditions.sulfur_dust": "Sulfur Dust",
 
     "block.amadditions.sulfur_block": "Sulfur Block",
+    "block.amadditions.sulfur_spike": "Sulfur Spike",
+
+    "tooltip.amadditions.sulfur_spike": "§7Only grows when placed under a Sulfur Block",
 
     "component.amadditions.with_electrolytes": " with Electrolytes"
 }

@@ -1,0 +1,27 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "amadditions:item/sulfur_spike"
+  },
+  "display": {
+    "firstperson_righthand": {
+      "rotation": [0, 100, 0],
+      "scale": [0.7, 0.7, 0.7]
+    },
+
+    "thirdperson_righthand": {
+      "rotation": [0, 100, 0],
+      "scale": [0.7, 0.7, 0.7]
+    },
+
+    "firstperson_lefthand": {
+      "rotation": [0, 100, 0],
+      "scale": [0.7, 0.7, 0.7]
+    },
+
+    "thirdperson_lefthand": {
+      "rotation": [0, 100, 0],
+      "scale": [0.7, 0.7, 0.7]
+    }
+  }
+}

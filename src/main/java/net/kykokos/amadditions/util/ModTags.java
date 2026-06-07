@@ -24,6 +24,8 @@ public class ModTags {
 
 
         public static final TagKey<Item> SULFUR_BLOCK_ITEM = ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "storage_blocks/sulfur"));
+        public static final TagKey<Item> SULFUR_GEM = ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "gems/sulfur"));
+        public static final TagKey<Item> SULFUR_DUST = ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "dusts/sulfur"));
 
         private static TagKey<Item> createTag(String name) {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath(AeroModepackAdditions.MODID, name));

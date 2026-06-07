@@ -23,5 +23,11 @@ public class ModItemTagProvider extends ItemTagsProvider {
         tag(ModTags.Items.SULFUR_BLOCK_ITEM)
                 .add(ModBlocks.SULFUR_BLOCK.asItem());
 
+        tag(ModTags.Items.SULFUR_GEM)
+                .add(ModItems.SULFUR_CHUNK.get());
+
+        tag(ModTags.Items.SULFUR_DUST)
+                .add(ModItems.SULFUR_DUST.get());
+
     }
 }

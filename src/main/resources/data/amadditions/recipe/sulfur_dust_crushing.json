@@ -1,0 +1,15 @@
+{
+  "type": "create:crushing",
+  "processing_time": 250,
+  "ingredients": [
+    {
+      "item": "amadditions:sulfur_chunk"
+    }
+  ],
+  "results": [
+    {
+      "id": "amadditions:sulfur_dust",
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "thickness=base,vertical_direction=down": {
+      "model": "amadditions:block/sulfur_spike_down_base"
+    },
+    "thickness=frustum,vertical_direction=down": {
+      "model": "amadditions:block/sulfur_spike_down_frustum"
+    },
+    "thickness=middle,vertical_direction=down": {
+      "model": "amadditions:block/sulfur_spike_down_middle"
+    },
+    "thickness=tip,vertical_direction=down": {
+      "model": "amadditions:block/sulfur_spike_down_tip"
+    }
+  }
+}

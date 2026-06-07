@@ -1,8 +1,13 @@
 {
     "item.amadditions.electror": "Elektror",
     "item.amadditions.electror_powder": "Prášek z Elektroru",
+    "item.amadditions.sulfur_chunk": "Hrouda Síry",
+    "item.amadditions.sulfur_dust": "Drcená Síra",
 
     "block.amadditions.sulfur_block": "Blok Síry",
+    "block.amadditions.sulfur_spike": "Krápník ze Síry",
+
+    "tooltip.amadditions.sulfur_spike": "§7Roste pouze, pokud visí na Bloku Síry",
 
     "component.amadditions.with_electrolytes": " s Elektrolyty"
 }

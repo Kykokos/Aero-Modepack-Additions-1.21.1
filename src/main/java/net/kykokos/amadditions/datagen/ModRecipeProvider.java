@@ -1,11 +1,14 @@
 package net.kykokos.amadditions.datagen;
 
+import com.simibubi.create.AllRecipeTypes;
+import com.simibubi.create.content.processing.recipe.ProcessingRecipeBuilder;
 import net.kykokos.amadditions.AeroModepackAdditions;
 import net.kykokos.amadditions.block.ModBlocks;
 import net.kykokos.amadditions.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
@@ -33,9 +36,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('K', Items.LIGHTNING_ROD)
                 .unlockedBy("has_echo_shard", has(Items.ECHO_SHARD)).save(recipeOutput);*/
 
-        /*ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.ELECTROR.get(),42)
-                .requires(Items.ECHO_SHARD)
-                .unlockedBy("has_echo_shard", has(Items.ECHO_SHARD)).save(recipeOutput);*/
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.SULFUR_BLOCK.get())
+                .requires(ModItems.SULFUR_CHUNK, 9)
+                .unlockedBy("has_sulfur_block", has(ModBlocks.SULFUR_BLOCK.get())).save(recipeOutput);
 
         /*ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.ELECTROR.get(),42)
                 .requires(Items.SCULK)
