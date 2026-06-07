@@ -1,0 +1,21 @@
+{
+  "heatRequirement": "none",
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "c:dusts/sulfur"
+    },
+    {
+      "item": "minecraft:charcoal"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:gunpowder",
+      "count": 3
+    }
+  ]
+}

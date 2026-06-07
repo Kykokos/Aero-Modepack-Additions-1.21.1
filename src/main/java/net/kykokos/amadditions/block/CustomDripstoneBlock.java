@@ -23,12 +23,10 @@ public class CustomDripstoneBlock extends PointedDripstoneBlock {
                 .setValue(WATERLOGGED, false));
     }
 
-    // RŮST: Upraveno pro kontrolu sulfur_blocku na stropě
     @Override
     protected void randomTick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
         if (state.getValue(TIP_DIRECTION) == Direction.DOWN && state.getValue(THICKNESS) == DripstoneThickness.TIP) {
 
-            // KONTROLA: Rosteme pouze, pokud celý tento krápník visí na sulfur_blocku
             if (isAttachedToSulfurBlock(level, pos)) {
                 if (random.nextFloat() < 0.05f) {
                     BlockPos targetPos = pos.below();
@@ -42,17 +40,13 @@ public class CustomDripstoneBlock extends PointedDripstoneBlock {
         }
     }
 
-    // Pomocná metoda, která najde strop a zkontroluje sulfur_block
     private boolean isAttachedToSulfurBlock(ServerLevel level, BlockPos pos) {
         BlockPos.MutableBlockPos currentPos = pos.mutable().move(Direction.UP);
 
-        // Stoupáme nahoru, dokud narážíme na naše spiky
         while (level.getBlockState(currentPos).is(this)) {
             currentPos.move(Direction.UP);
         }
 
-        // Jakmile spiky skončí, zkontrolujeme, jestli je blok nad nimi sulfur_block
-        // POZNÁMKA: Nahraď "ModBlocks.SULFUR_BLOCK.get()" přesným názvem svého sulfur bloku!
         return level.getBlockState(currentPos).is(ModBlocks.SULFUR_BLOCK.get());
     }
 
@@ -72,7 +66,6 @@ public class CustomDripstoneBlock extends PointedDripstoneBlock {
         BlockPos blockAbove = pos.above();
         BlockState stateAbove = level.getBlockState(blockAbove);
 
-        // Blok přežije, pokud je nad ním další spike, nebo pevný blok (třeba právě sulfur_block)
         if (!stateAbove.is(this) && !stateAbove.isFaceSturdy(level, blockAbove, Direction.DOWN)) {
             return Blocks.AIR.defaultBlockState();
         }
@@ -80,26 +73,24 @@ public class CustomDripstoneBlock extends PointedDripstoneBlock {
         return state.setValue(THICKNESS, calculateThicknessFor(level, pos));
     }
 
-    // REPREZENTATIVNÍ VÝPOČET TLOUŠŤKY (Opravený)
     private DripstoneThickness calculateThicknessFor(LevelReader level, BlockPos pos) {
         boolean hasSpikeAbove = level.getBlockState(pos.above()).is(this);
         boolean hasSpikeBelow = level.getBlockState(pos.below()).is(this);
 
         if (hasSpikeAbove && hasSpikeBelow) {
-            return DripstoneThickness.MIDDLE; // Uprostřed řetězce
+            return DripstoneThickness.MIDDLE;
         }
         if (hasSpikeAbove) {
-            return DripstoneThickness.TIP;    // Na úplném spodku řetězce (špička)
+            return DripstoneThickness.TIP;
         }
         if (hasSpikeBelow) {
             BlockState stateBelow = level.getBlockState(pos.below());
             if (stateBelow.is(this) && stateBelow.getValue(THICKNESS) == DripstoneThickness.TIP) {
-                return DripstoneThickness.FRUSTUM; // Přechod mezi základnou a špičkou
+                return DripstoneThickness.FRUSTUM;
             }
-            return DripstoneThickness.BASE; // Úplný začátek u stropu, pod kterým visí další
+            return DripstoneThickness.BASE;
         }
 
-        // OPRAVA: Pokud je blok úplně sám (nemá nad sebou ani pod sebou jiný spike), bude to špička
         return DripstoneThickness.TIP;
     }
 

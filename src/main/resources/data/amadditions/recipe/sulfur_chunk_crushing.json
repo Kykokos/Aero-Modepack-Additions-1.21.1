@@ -1,6 +1,6 @@
 {
   "type": "create:crushing",
-  "processing_time": 250,
+  "processing_time": 200,
   "ingredients": [
     {
       "item": "amadditions:sulfur_block"
@@ -9,16 +9,16 @@
   "results": [
     {
       "id": "amadditions:sulfur_chunk",
-      "count": 6
+      "count": 3
     },
     {
       "id": "amadditions:sulfur_chunk",
-      "chance": 70,
-      "count": 2
+      "chance": 0.7,
+      "count": 1
     },
     {
       "id": "minecraft:flint",
-      "chance": 20,
+      "chance": 0.2,
       "count": 1
     }
   ]

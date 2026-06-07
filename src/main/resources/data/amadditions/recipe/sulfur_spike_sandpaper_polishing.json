@@ -1,0 +1,14 @@
+{
+  "type": "create:sandpaper_polishing",
+  "ingredients": [
+    {
+      "item": "amadditions:sulfur_chunk"
+    }
+  ],
+  "results": [
+    {
+      "id": "amadditions:sulfur_spike",
+      "count": 1
+    }
+  ]
+}

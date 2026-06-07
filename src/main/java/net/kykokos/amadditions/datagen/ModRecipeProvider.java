@@ -40,9 +40,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(ModItems.SULFUR_CHUNK, 9)
                 .unlockedBy("has_sulfur_block", has(ModBlocks.SULFUR_BLOCK.get())).save(recipeOutput);
 
-        /*ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.ELECTROR.get(),42)
-                .requires(Items.SCULK)
-                .unlockedBy("has_sculk", has(Items.SCULK)).save(recipeOutput, "amadditions:electror_from_sculk");*/
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.SULFUR_BLOCK.get())
+                .requires(ModItems.SULFUR_SPIKE, 9)
+                .unlockedBy("has_sulfur_block", has(ModBlocks.SULFUR_BLOCK.get())).save(recipeOutput, "amadditions:sulfur_block_from_spike");
 
         //oreSmelting(recipeOutput, IDK_SMELTRABLES, RecipeCategory.MISC, ModItems.IDK.get(), 0.25f, 200, "idk");
         //oreBlasting(recipeOutput, IDK_SMELTRABLES, RecipeCategory.MISC, ModItems.IDK.get(), 0.25f, 100, "idk");
