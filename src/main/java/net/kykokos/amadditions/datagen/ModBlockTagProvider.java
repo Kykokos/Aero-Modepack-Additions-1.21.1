@@ -41,6 +41,10 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.SULFUR_BRICK_STAIRS.get())
                 .add(ModBlocks.SULFUR_BRICK_WALL.get());
 
+        tag(BlockTags.WALLS)
+                .add(ModBlocks.POLISHED_SULFUR_WALL.get())
+                .add(ModBlocks.SULFUR_BRICK_WALL.get());
+
 
         tag(ModTags.Blocks.SULFUR_BLOCK)
                 .add(ModBlocks.SULFUR_BLOCK.get());
