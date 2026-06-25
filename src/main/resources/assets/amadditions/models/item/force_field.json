@@ -1,0 +1,10 @@
+{
+  "loader": "neoforge:obj",
+  "model": "amadditions:photon/models/obj/force_field_model.obj",
+  "textures": {
+
+  },
+  "automatic_culling": false,
+  "shade_quads": false,
+  "flip_v": true
+}
