@@ -1,14 +1,20 @@
 package net.kykokos.amadditions;
 
 import net.kykokos.amadditions.block.ModBlocks;
+import net.kykokos.amadditions.entity.ModEntityTypes;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.entity.ThrownItemRenderer;
+import net.minecraft.client.resources.model.ModelResourceLocation;
+import net.minecraft.resources.ResourceLocation;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
+import net.neoforged.neoforge.client.event.EntityRenderersEvent;
+import net.neoforged.neoforge.client.event.ModelEvent;
 import net.neoforged.neoforge.client.gui.ConfigurationScreen;
 import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
 
@@ -28,4 +34,18 @@ public class AeroModepackAdditionsClient {
     static void onClientSetup(FMLClientSetupEvent event) {
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.SULFUR_SPIKE.get(), RenderType.cutout());
     }
+
+    @SubscribeEvent
+    public static void registerModels(ModelEvent.RegisterAdditional event) {
+        event.register(ModelResourceLocation.standalone(
+                ResourceLocation.fromNamespaceAndPath("amadditions", "item/force_field")
+        ));
+    }
+
+    @SubscribeEvent
+    public static void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {
+        event.registerEntityRenderer(ModEntityTypes.FANCY_ROCKET.get(), ThrownItemRenderer::new);
+    }
+
+
 }

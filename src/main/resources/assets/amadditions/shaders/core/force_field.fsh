@@ -26,7 +26,7 @@ float FresnelEffect(vec3 Normal, vec3 ViewDir, float power)
 void main() {
     float fresnelValue = FresnelEffect(ViewNormal, ViewDir, power);
     vec4 color = linear_fog(vertexColor * ColorModulator, vertexDistance, FogStart, FogEnd, FogColor);
-    color.xyz = HDRColor.rgb * HDRColor.a;
+    color.xyz *= HDRColor.rgb * HDRColor.a;
     fragColor = vec4(color.xyz, fresnelValue);
 
 }

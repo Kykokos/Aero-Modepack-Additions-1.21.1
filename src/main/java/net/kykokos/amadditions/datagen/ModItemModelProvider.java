@@ -21,6 +21,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.ELECTROR_POWDER.get());
         basicItem(ModItems.SULFUR_CHUNK.get());
         basicItem(ModItems.SULFUR_DUST.get());
+        basicItem(ModItems.FANCY_ROCKET.get());
 
         wallItem(ModBlocks.POLISHED_SULFUR_WALL, ModBlocks.POLISHED_SULFUR);
         wallItem(ModBlocks.SULFUR_BRICK_WALL, ModBlocks.SULFUR_BRICKS);

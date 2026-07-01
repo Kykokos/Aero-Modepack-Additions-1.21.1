@@ -2,6 +2,7 @@ package net.kykokos.amadditions.item;
 
 import net.kykokos.amadditions.AeroModepackAdditions;
 import net.kykokos.amadditions.block.ModBlocks;
+import net.kykokos.amadditions.item.custom.FancyRocketItem;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
@@ -33,6 +34,9 @@ public class ModItems {
                     super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
                 }
             });
+
+    public static final DeferredItem<Item> FANCY_ROCKET = ITEMS.register("fancy_rocket",
+            () -> new FancyRocketItem(new Item.Properties().rarity(Rarity.UNCOMMON)));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

@@ -1,6 +1,8 @@
 package net.kykokos.amadditions;
 
 import net.kykokos.amadditions.block.ModBlocks;
+import net.kykokos.amadditions.entity.ModEntityTypes;
+import net.kykokos.amadditions.entity.custom.FancyRocketDispenserBehaviors;
 import net.kykokos.amadditions.item.ModItems;
 import net.kykokos.amadditions.util.ModDataComponents;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -38,6 +40,8 @@ public class AeroModepackAdditions {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
+        ModEntityTypes.register(modEventBus);
+
         ModDataComponents.DATA_COMPONENT_TYPES.register(modEventBus);
 
         modEventBus.addListener(this::addCreative);
@@ -52,6 +56,10 @@ public class AeroModepackAdditions {
             event.accept(ModItems.ELECTROR_POWDER);
             event.accept(ModItems.SULFUR_CHUNK);
             event.accept(ModItems.SULFUR_DUST);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+            event.accept(ModItems.FANCY_ROCKET);
         }
 
         if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
@@ -73,7 +81,7 @@ public class AeroModepackAdditions {
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
-
+        FancyRocketDispenserBehaviors.register();
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

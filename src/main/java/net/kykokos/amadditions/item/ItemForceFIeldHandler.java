@@ -3,6 +3,7 @@ package net.kykokos.amadditions.item;
 import com.lowdragmc.photon.client.fx.EntityEffectExecutor;
 import com.lowdragmc.photon.client.fx.FX;
 import com.lowdragmc.photon.client.fx.FXHelper;
+import net.kykokos.amadditions.Config;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.item.ItemEntity;
@@ -24,10 +25,16 @@ public class ItemForceFIeldHandler {
 
                 CompoundTag data = itemEntity.getPersistentData();
                 if (!data.getBoolean("has_force_field_fx")) {
+                    if (!Config.ENABLE_EFFECTS.get()) return;
 
                     FX fx = FXHelper.getFX(ResourceLocation.parse("amadditions:force_field"));
 
-                    new EntityEffectExecutor(fx, itemEntity.level(), itemEntity, EntityEffectExecutor.AutoRotate.NONE).start();
+                    if (fx == null) return;
+
+                    BobbingEntityEffectExecutor effect = new BobbingEntityEffectExecutor(fx, itemEntity.level(), itemEntity, EntityEffectExecutor.AutoRotate.NONE);
+                    effect.setForcedDeath(true);
+                    effect.start();
+
 
                     data.putBoolean("has_force_field_fx", true);
                 }

@@ -1,6 +1,6 @@
 {
   "loader": "neoforge:obj",
-  "model": "amadditions:photon/models/obj/force_field_model.obj",
+  "model": "amadditions:models/obj/force_field_model.obj",
   "textures": {
 
   },

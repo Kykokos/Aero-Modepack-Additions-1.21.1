@@ -3,6 +3,7 @@
     "item.amadditions.electror_powder": "Prášek z Elektroru",
     "item.amadditions.sulfur_chunk": "Hrouda Síry",
     "item.amadditions.sulfur_dust": "Drcená Síra",
+    "item.amadditions.fancy_rocket": "Raketa pro Fajnšmekry",
 
     "block.amadditions.sulfur_block": "Blok Síry",
     "block.amadditions.sulfur_spike": "Krápník ze Síry",
@@ -17,5 +18,10 @@
 
     "tooltip.amadditions.sulfur_spike": "§7Roste pouze, pokud visí na Bloku Síry",
 
-    "component.amadditions.with_electrolytes": " s Elektrolyty"
+    "component.amadditions.with_electrolytes": " s Elektrolyty",
+
+    "key.amadditions.clear_photon_effects":"Vyčistit všechny Photon efekty",
+    "key.categories.amadditions":"Aero Modepack Additions",
+
+    "amadditions.configuration.enable_hoton_effects":"Zapnout Photon Efekty:"
 }

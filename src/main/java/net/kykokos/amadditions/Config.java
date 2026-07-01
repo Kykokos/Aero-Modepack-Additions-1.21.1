@@ -1,7 +1,5 @@
 package net.kykokos.amadditions;
 
-import java.util.List;
-
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.neoforge.common.ModConfigSpec;
@@ -10,6 +8,12 @@ import net.neoforged.neoforge.common.ModConfigSpec;
 // Demonstrates how to use Neo's config APIs
 public class Config {
     private static final ModConfigSpec.Builder BUILDER = new ModConfigSpec.Builder();
+
+    public static final ModConfigSpec.BooleanValue ENABLE_EFFECTS = BUILDER
+            .comment("Disables all Photon visual effects.",
+                    "Only use if the effects are causing lag",
+                    "If you want to delete all the existing effects press F8 (or your custom keybind)")
+            .define("enable_photon_effects", true);
 
     /*public static final ModConfigSpec.BooleanValue LOG_DIRT_BLOCK = BUILDER
             .comment("Whether to log the dirt block on common setup")
